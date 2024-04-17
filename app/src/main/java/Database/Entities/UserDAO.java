@@ -11,6 +11,6 @@ public interface UserDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(User user);
 
-    @Query("Select * from " + User)
+    //@Query("Select * from " + User)
 
 }
