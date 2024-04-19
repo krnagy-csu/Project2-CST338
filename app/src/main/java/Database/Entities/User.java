@@ -14,6 +14,14 @@ public class User {
     private Boolean admin;
     private Integer points;
 
+    public User(String username, String password, Boolean admin, Integer points) {
+        this.username = username;
+        this.password = password;
+        this.admin = admin;
+        this.points = points;
+        this.purchases = "";
+    }
+
     public int getId() {
         return id;
     }
