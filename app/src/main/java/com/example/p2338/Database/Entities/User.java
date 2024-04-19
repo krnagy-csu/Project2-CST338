@@ -1,9 +1,11 @@
-package Database.Entities;
+package com.example.p2338.Database.Entities;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Users")
+import com.example.p2338.Database.Project2Database;
+
+@Entity(tableName = Project2Database.USER_TABLE)
 public class User {
     @PrimaryKey(autoGenerate = true)
     private int id;

@@ -17,6 +17,7 @@ import java.sql.SQLOutput;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "MA P2";
     String username;
     String password; //INCREDIBLY secure, but for this application it's fine
     String userID;
