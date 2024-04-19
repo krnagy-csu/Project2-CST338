@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.p2338.Database.Entities.UserDAO;
+import com.example.p2338.Database.Project2Database;
+import com.example.p2338.Database.Project2Repository;
 import com.example.p2338.databinding.ActivityMainBinding;
 
 import org.w3c.dom.Text;
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"Username: " + username + ", Password: " + password,Toast.LENGTH_SHORT).show();
             }
         });
+
+        //if
 
     }
 

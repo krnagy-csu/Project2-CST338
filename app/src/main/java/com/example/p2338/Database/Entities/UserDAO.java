@@ -13,9 +13,14 @@ import com.example.p2338.Database.Project2Database;
 @Dao
 public interface UserDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insert(User user);
+    void insert(User... user);
 
     @Query("Select * from " + Project2Database.USER_TABLE)
-    ArrayList<User> getAllRecords();
+    List<User> getAllRecords();
+
+    @Query("DELETE from " + Project2Database.USER_TABLE)
+    void deleteAll();
+
+
 
 }

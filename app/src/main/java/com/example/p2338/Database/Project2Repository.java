@@ -19,7 +19,24 @@ public class Project2Repository {
     public Project2Repository (Application application){
         Project2Database db = Project2Database.getDatabase(application);
         this.userDAO = db.userDAO();
-        this.allUsers = this.userDAO.getAllRecords();
+        this.allUsers = (ArrayList<User>) this.userDAO.getAllRecords();
+    }
+
+    public static Project2Repository getRepository (Application application){
+        Future<Project2Repository> future = Project2Database.databaseWriteExecutor.submit(
+                new Callable<Project2Repository>() {
+                    @Override
+                    public Project2Repository call() throws Exception {
+                        return new Project2Repository(application);
+                    }
+                }
+        );
+        try {
+            return future.get();
+        } catch (InterruptedException | ExecutionException e){
+            Log.i(MainActivity.TAG, "Failed to get repository.");
+            return null;
+        }
     }
 
     public ArrayList<User> getAllUsers(){
@@ -27,7 +44,7 @@ public class Project2Repository {
                 new Callable<ArrayList<User>>() {
                     @Override
                     public ArrayList<User> call() throws Exception {
-                        return userDAO.getAllRecords();
+                        return (ArrayList<User>) userDAO.getAllRecords();
                     }
                 }
         );

@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 
 import com.example.p2338.Database.Entities.User;
 
-@Database(entities = (User.class), version = 1, exportSchema = false)
+@Database(entities = User.class, version = 1, exportSchema = false)
 public abstract class Project2Database extends RoomDatabase {
     public static final String USER_TABLE = "userTable";
     private static final String DATABASE_NAME = "Project2Database";
@@ -49,8 +49,15 @@ public abstract class Project2Database extends RoomDatabase {
         public void onCreate(@NonNull SupportSQLiteDatabase db){
             super.onCreate(db);
             Log.i(MainActivity.TAG,"Database created.");
+            databaseWriteExecutor.execute(() -> {
+                UserDAO dao = INSTANCE.userDAO();
+                dao.deleteAll();
+                User admin = new User("admin1","admin1",true);
+                dao.insert(admin);
+                User testUser1 = new User("testUser1", "testUser1", false);
+                dao.insert(testUser1);
+            });
         }
-        //TODO: add databaseWriteExecutor.execute()
     };
 
     public abstract UserDAO userDAO();
