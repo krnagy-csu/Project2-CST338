@@ -21,6 +21,7 @@ import com.example.p2338.databinding.ActivityMainBinding;
 import org.w3c.dom.Text;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -87,13 +88,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean verifyUser(){
-        User user = repository.getUserByUsername(username);
-        if (user == null){
-            Log.e(TAG,"Null user!");
+        ArrayList<User> users = repository.getAllUsers();
+        if (users.isEmpty()){
+            Log.e(TAG,"No users!");
             return false;
         }
         else {
-            return (user.getPassword().equals(password));
+            for (User u : users){
+                if (u.getUsername().equals(username)){
+                    if (u.getPassword().equals(password)){
+                        isAdmin = u.getAdmin();
+                        return true;
+                    }
+                    else {
+                        Log.i(TAG,"Incorrect password!");
+                        return false;
+                    }
+                }
+            }
+            Log.i(TAG,"No user " + username + " found!");
+            return false;
         }
     }
 }

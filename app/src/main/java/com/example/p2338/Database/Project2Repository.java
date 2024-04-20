@@ -19,7 +19,7 @@ public class Project2Repository {
     public Project2Repository (Application application){
         Project2Database db = Project2Database.getDatabase(application);
         this.userDAO = db.userDAO();
-        this.allUsers = (ArrayList<User>) this.userDAO.getAllRecords();
+        this.allUsers = (ArrayList<User>) this.userDAO.getAllUsers();
     }
 
     public static Project2Repository getRepository (Application application){
@@ -44,7 +44,7 @@ public class Project2Repository {
                 new Callable<ArrayList<User>>() {
                     @Override
                     public ArrayList<User> call() throws Exception {
-                        return (ArrayList<User>) userDAO.getAllRecords();
+                        return (ArrayList<User>) userDAO.getAllUsers();
                     }
                 }
         );

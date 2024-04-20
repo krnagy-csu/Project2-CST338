@@ -1,6 +1,7 @@
 package com.example.p2338.Database.Entities;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
@@ -17,8 +18,14 @@ public interface UserDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(User... user);
 
+    @Delete
+    void delete(User user);
+
+    @Query("SELECT * FROM " + Project2Database.USER_TABLE + " ORDER BY username")
+    List<User>getAllUsersOrdered();
+
     @Query("Select * from " + Project2Database.USER_TABLE)
-    List<User> getAllRecords();
+    List<User> getAllUsers();
 
     @Query("DELETE from " + Project2Database.USER_TABLE)
     void deleteAll();
