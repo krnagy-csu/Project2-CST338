@@ -1,6 +1,7 @@
 package com.example.p2338;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,8 @@ import java.sql.SQLOutput;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MAIN-LOGIN";
+
+    public static Intent loginIntent;
     private String username = "";
     private String password = ""; //INCREDIBLY secure, but for this application it's fine
     private String userID = "";
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getInformationFromDisplay();
-                Toast.makeText(MainActivity.this,"Username: " + username + ", Password: " + password,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Username: " + username + ", Password: " + password,Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -61,14 +64,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void logInIntentFactory(Context context, String id, String uname, Boolean admin){
+        loginIntent = new Intent(context, LandingActivity.class);
+        loginIntent.putExtra("ID", userID);
+        loginIntent.putExtra("Username",username);
+        loginIntent.putExtra("Admin", isAdmin);
+    }
     private void logInUser(String UN, String PW){
         //TODO: make a method for the user to log in
         if (true) {
-            Intent loginIntent = new Intent(MainActivity.this,LandingActivity.class);
-            loginIntent.putExtra("ID", userID);
-            loginIntent.putExtra("Username",username);
-            loginIntent.putExtra("Admin", isAdmin);
-            //Log.i(TAG,i.getExtras().getString("ID"));
+            logInIntentFactory(MainActivity.this,userID,username,isAdmin);
             startActivity(loginIntent);
         }
         else {
