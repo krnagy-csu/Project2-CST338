@@ -64,5 +64,20 @@ public class Project2Repository {
         });
     }
 
+    public User getUserByUsername(String username) {
+        Future<User> future = Project2Database.databaseWriteExecutor.submit(
+                new Callable<User>() {
+                    @Override
+                    public User call() throws Exception {
+                        return userDAO.getUserByUsername(username);
+                    }
+                });
+        try{
+            future.get();
+        } catch (InterruptedException | ExecutionException e){
+            Log.w(MainActivity.TAG,"Error getting user by name.");
+        }
+        return null;
+    }
 }
 

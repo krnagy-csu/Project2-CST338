@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.p2338.Database.Entities.User;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.Database.Project2Database;
 import com.example.p2338.Database.Project2Repository;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private String password = ""; //INCREDIBLY secure, but for this application it's fine
     private String userID = "";
 
+    private Project2Repository repository;
+
     private boolean isAdmin = false;
     ActivityMainBinding binding;
     @Override
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         Button btn = findViewById(R.id.signInButton);
+
+        repository = Project2Repository.getRepository(getApplication());
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,12 +77,23 @@ public class MainActivity extends AppCompatActivity {
     }
     private void logInUser(String UN, String PW){
         //TODO: make a method for the user to log in
-        if (true) {
+        if (verifyUser()) {
             logInIntentFactory(MainActivity.this,userID,username,isAdmin);
             startActivity(loginIntent);
         }
         else {
             Toast.makeText(MainActivity.this,"Failed to log in! Incorrect name/password.",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean verifyUser(){
+        User user = repository.getUserByUsername(username);
+        if (user == null){
+            Log.e(TAG,"Null user!");
+            return false;
+        }
+        else {
+            return (user.getPassword().equals(password));
         }
     }
 }
