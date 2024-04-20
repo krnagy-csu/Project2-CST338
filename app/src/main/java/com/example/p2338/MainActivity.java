@@ -1,7 +1,9 @@
 package com.example.p2338;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,10 +22,12 @@ import java.sql.SQLOutput;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String TAG = "MA P2";
-    String username;
-    String password; //INCREDIBLY secure, but for this application it's fine
-    String userID;
+    public static final String TAG = "MAIN-LOGIN";
+    private String username = "";
+    private String password = ""; //INCREDIBLY secure, but for this application it's fine
+    private String userID = "";
+
+    private boolean isAdmin = false;
     ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +55,24 @@ public class MainActivity extends AppCompatActivity {
         TextView usernameView = findViewById(R.id.usernameInput);
         TextView passwordView = findViewById(R.id.passwordInput);
         username = usernameView.getText().toString();
-        System.out.println(username);
         password = passwordView.getText().toString();
-        System.out.println(password);
+        Log.i(MainActivity.TAG, username + ", " + password);
+        logInUser(username,password);
 
+    }
+
+    private void logInUser(String UN, String PW){
+        //TODO: make a method for the user to log in
+        if (true) {
+            Intent loginIntent = new Intent(MainActivity.this,LandingActivity.class);
+            loginIntent.putExtra("ID", userID);
+            loginIntent.putExtra("Username",username);
+            loginIntent.putExtra("Admin", isAdmin);
+            //Log.i(TAG,i.getExtras().getString("ID"));
+            startActivity(loginIntent);
+        }
+        else {
+            Toast.makeText(MainActivity.this,"Failed to log in! Incorrect name/password.",Toast.LENGTH_SHORT).show();
+        }
     }
 }
