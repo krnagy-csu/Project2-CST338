@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">P2338</string>
+    <string name="admin_options">Admin Options</string>
+    <string name="reset_lists">Reset Lists</string>
+    <string name="toggle_debug_log">Toggle Debug Log</string>
+    <string name="toggle_ads">Toggle Ads</string>
+    <string name="remove_user">Remove User</string>
+    <string name="give_yourself_gold">Give Yourself Gold</string>
+    <string name="give_yourself_score">Give Yourself Score</string>
+    <string name="see_suggestions">See Suggestions</string>
 </resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/AdminOptionBG"
+    tools:context=".AdminOptions">
+
+    <TextView
+        android:id="@+id/AdminOptionTitle"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/admin_options"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0DDDCC"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bResetLists"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bResetLists"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="@string/reset_lists"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bToggleDebugLog"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/toggle_debug_log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bResetLists" />
+
+    <Button
+        android:id="@+id/bToggleAds"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:background="@drawable/round_button"
+        android:text="@string/toggle_ads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bToggleDebugLog" />
+
+    <Button
+        android:id="@+id/bRemoveUser"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/remove_user"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bToggleAds" />
+
+    <Button
+        android:id="@+id/bGiveYourselfGold"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_button"
+        android:text="@string/give_yourself_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bRemoveUser" />
+
+    <Button
+        android:id="@+id/bGiveYourselfScore"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_button"
+        android:text="@string/give_yourself_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bGiveYourselfGold" />
+
+    <Button
+        android:id="@+id/bSeeSuggestions"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/see_suggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bGiveYourselfScore" />
+</androidx.constraintlayout.widget.ConstraintLayout>
