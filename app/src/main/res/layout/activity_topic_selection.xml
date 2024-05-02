@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".topic_selection"
+    android:background="@drawable/greybackground">
+
+    <TextView
+        android:id="@+id/tSelectATopic"
+        android:layout_width="166dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/select_a_topic"
+        android:textColor="#FAF500"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BottomLineThree"
+        android:layout_width="198dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_line_button"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tSelectATopic" />
+
+    <Button
+        android:id="@+id/TopLineThree"
+        android:layout_width="198dp"
+        android:layout_height="6dp"
+        android:background="@drawable/btn_line_button"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tSelectATopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/bFood"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/food"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BottomLineThree" />
+
+    <Button
+        android:id="@+id/bSports"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sports"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bFood" />
+
+    <Button
+        android:id="@+id/bAndroidIcons"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/android_icons"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSports" />
+
+    <Button
+        android:id="@+id/bGameModes"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round_button"
+        android:text="@string/game_modes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bAndroidIcons" />
+
+    <ImageView
+        android:id="@+id/WeirdStarLeftOne"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bGameModes"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        app:tint="#FAF500"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/WeirdStarRightOne"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bGameModes"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        app:tint="#FAF500"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
