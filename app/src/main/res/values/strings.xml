@@ -8,7 +8,6 @@
     <string name="give_yourself_gold">Give Yourself Gold</string>
     <string name="give_yourself_score">Give Yourself Score</string>
     <string name="see_suggestions">See Suggestions</string>
-    <string name="welcome_admin">Welcome Admin!</string>
     <string name="admin_options_top_right_btn">Admin Options</string>
     <string name="make_new_list">Make New List</string>
     <string name="view_existing_lists">View Existing Lists</string>
@@ -17,4 +16,5 @@
     <string name="stats">Stats</string>
     <string name="notifications">Notifications</string>
     <string name="help">Help</string>
+    <string name="welcome_user">Welcome User!</string>
 </resources>
