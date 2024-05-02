@@ -32,4 +32,7 @@
     <string name="c">C</string>
     <string name="d">D</string>
     <string name="f">F</string>
+    <string name="select_game_mode">Select Game Mode</string>
+    <string name="color_match">Color Match</string>
+    <string name="speed_run">Speed Run</string>
 </resources>
