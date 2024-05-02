@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.096" />
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/usernameSignupInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -34,10 +34,10 @@
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/passwordSignupInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="176dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="text"
@@ -46,27 +46,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
-    <Button
-        android:id="@+id/signInButton"
-        android:layout_width="262dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="80dp"
-        android:text="Sign In"
+    <EditText
+        android:id="@+id/passwordSignupConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <Button
-        android:id="@+id/signUpButtonMainActivity"
+        android:id="@+id/signUpButtonSignUpActivity"
         android:layout_width="262dp"
         android:layout_height="77dp"
-        android:layout_marginTop="32dp"
         android:text="Sign Up"
-        app:layout_constraintEnd_toEndOf="@+id/signInButton"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/signInButton"
-        app:layout_constraintTop_toBottomOf="@+id/signInButton" />
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="503dp" />
 
     <TextView
         android:id="@+id/promptLogIn"
@@ -74,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Please log in."
-        app:layout_constraintBottom_toTopOf="@+id/usernameInput"
+        app:layout_constraintBottom_toTopOf="@+id/usernameSignupInput"
         app:layout_constraintEnd_toEndOf="@+id/titleTextView"
         app:layout_constraintStart_toStartOf="@+id/titleTextView"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"

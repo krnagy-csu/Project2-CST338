@@ -33,7 +33,7 @@ public interface UserDAO {
     @Query("SELECT * from " + Project2Database.USER_TABLE + " WHERE username == :userName")
     User getUserByUsername(String userName);
 
-    @Query("SELECT * from " + Project2Database.USER_TABLE + " WHERE userID == :userID")
-    User getUserByID (int userID);
+    @Query("SELECT * from " + Project2Database.USER_TABLE + " WHERE id == :id")
+    User getUserByID (int id);
 
 }

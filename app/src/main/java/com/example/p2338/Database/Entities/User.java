@@ -11,7 +11,6 @@ import java.util.Objects;
 public class User {
     @PrimaryKey(autoGenerate = true)
     private int id;
-
     private String username;
     private String password;
     private String purchases;

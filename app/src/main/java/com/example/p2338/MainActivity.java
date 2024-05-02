@@ -16,7 +16,6 @@ import com.example.p2338.Database.Entities.User;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.Database.Project2Database;
 import com.example.p2338.Database.Project2Repository;
-import com.example.p2338.databinding.ActivityMainBinding;
 
 import org.w3c.dom.Text;
 
@@ -35,15 +34,16 @@ public class MainActivity extends AppCompatActivity {
     private Project2Repository repository;
 
     private boolean isAdmin = false;
-    ActivityMainBinding binding;
+    //ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        //binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         Button btn = findViewById(R.id.signInButton);
+        Button signUpBtn = findViewById(R.id.signUpButtonMainActivity);
 
         repository = Project2Repository.getRepository(getApplication());
         btn.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this,"Username: " + username + ", Password: " + password,Toast.LENGTH_SHORT).show();
             }
         });
-
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logInIntentFactory(MainActivity.this,SignUpActivity.class,"","",false);
+                startActivity(loginIntent);
+            }
+        });
         //if
 
     }
@@ -70,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void logInIntentFactory(Context context, String id, String uname, Boolean admin){
-        loginIntent = new Intent(context, LandingActivity.class);
+    private void logInIntentFactory(Context context, Class targetClass, String id, String uname, Boolean admin){
+        loginIntent = new Intent(context, targetClass);
         loginIntent.putExtra("ID", userID);
         loginIntent.putExtra("Username",username);
         loginIntent.putExtra("Admin", isAdmin);
@@ -79,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     private void logInUser(String UN, String PW){
         //TODO: make a method for the user to log in
         if (verifyUser()) {
-            logInIntentFactory(MainActivity.this,userID,username,isAdmin);
+            logInIntentFactory(MainActivity.this,LandingActivity.class,userID,username,isAdmin);
             startActivity(loginIntent);
         }
         else {
