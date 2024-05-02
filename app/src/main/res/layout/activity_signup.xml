@@ -63,9 +63,12 @@
         android:id="@+id/signUpButtonSignUpActivity"
         android:layout_width="262dp"
         android:layout_height="77dp"
+        android:layout_marginTop="64dp"
         android:text="Sign Up"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="503dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignupConfirm" />
 
     <TextView
         android:id="@+id/promptLogIn"
@@ -78,5 +81,15 @@
         app:layout_constraintStart_toStartOf="@+id/titleTextView"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/signUpBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/signUpButtonSignUpActivity"
+        app:layout_constraintStart_toStartOf="@+id/signUpButtonSignUpActivity"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButtonSignUpActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

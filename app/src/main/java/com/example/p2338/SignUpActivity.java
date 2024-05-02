@@ -31,6 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         Button btn = findViewById(R.id.signUpButtonSignUpActivity);
+        Button backBtn = findViewById(R.id.signUpBackButton);
 
         repository = Project2Repository.getRepository(getApplication());
 
@@ -45,6 +46,16 @@ public class SignUpActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(SignUpActivity.this,errMsg,Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    signUpIntentFactory(SignUpActivity.this);
+                    startActivity(signupIntent);
+                }catch (Exception ignored){}
             }
         });
     }

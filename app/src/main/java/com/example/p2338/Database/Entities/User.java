@@ -16,12 +16,14 @@ public class User {
     private String purchases;
     private Boolean admin;
     private Integer points;
+    private Integer gold;
 
     public User(String username, String password, Boolean admin) {
         this.username = username;
         this.password = password;
         this.admin = admin;
         this.points = 0;
+        this.gold = 0;
         this.purchases = "";
     }
 
@@ -73,16 +75,24 @@ public class User {
         this.points = points;
     }
 
+    public Integer getGold() {
+        return gold;
+    }
+
+    public void setGold(Integer gold) {
+        this.gold = gold;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(purchases, user.purchases) && Objects.equals(admin, user.admin) && Objects.equals(points, user.points);
+        return id == user.id && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(purchases, user.purchases) && Objects.equals(admin, user.admin) && Objects.equals(points, user.points) && Objects.equals(gold,user.gold);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username, password, purchases, admin, points);
+        return Objects.hash(id, username, password, purchases, admin, points, gold);
     }
 }

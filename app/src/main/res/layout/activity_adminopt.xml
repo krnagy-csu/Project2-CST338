@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/adminDeleteUserButton"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:text="Delete User"
+        app:layout_constraintEnd_toEndOf="@+id/adminTitle"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/adminTitle"
+        app:layout_constraintTop_toBottomOf="@+id/adminTitle" />
+
+    <TextView
+        android:id="@+id/adminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Admin Options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminAdToggle"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Toggle Ads"
+        app:layout_constraintEnd_toEndOf="@+id/adminDeleteUserButton"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/adminDeleteUserButton"
+        app:layout_constraintTop_toBottomOf="@+id/adminDeleteUserButton" />
+
+    <Button
+        android:id="@+id/goldAdd"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Gold"
+        app:layout_constraintStart_toStartOf="@+id/adminAdToggle"
+        app:layout_constraintTop_toBottomOf="@+id/adminAdToggle"
+        app:layout_constraintHorizontal_bias="0.533"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
