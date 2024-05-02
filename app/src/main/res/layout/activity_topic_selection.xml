@@ -46,11 +46,12 @@
 
     <Button
         android:id="@+id/bFood"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
         android:layout_marginTop="44dp"
-        android:text="@string/food"
         android:background="@drawable/round_button"
+        android:text="@string/food"
+        android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,11 +59,12 @@
 
     <Button
         android:id="@+id/bSports"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
         android:layout_marginTop="40dp"
-        android:text="@string/sports"
         android:background="@drawable/round_button"
+        android:text="@string/sports"
+        android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,11 +72,12 @@
 
     <Button
         android:id="@+id/bAndroidIcons"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
         android:layout_marginTop="48dp"
-        android:text="@string/android_icons"
         android:background="@drawable/round_button"
+        android:text="@string/android_icons"
+        android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,11 +85,12 @@
 
     <Button
         android:id="@+id/bGameModes"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/round_button"
         android:text="@string/game_modes"
+        android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,22 +98,22 @@
 
     <ImageView
         android:id="@+id/WeirdStarLeftOne"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="168dp"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bGameModes"
-        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_compass"
         app:tint="#FAF500"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/WeirdStarRightOne"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="168dp"
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
