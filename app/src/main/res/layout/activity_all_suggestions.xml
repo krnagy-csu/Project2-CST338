@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllSuggestions"
+    android:background="@drawable/TheOfficialBG">
+
+    <TextView
+        android:id="@+id/tAllSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/all_suggestions"
+        android:textColor="#FFFF00"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AboveTitleThree"
+        android:layout_width="200dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="4dp"
+        android:background="#CC5500"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tAllSuggestions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BelowTitleThree"
+        android:layout_width="200dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:background="#CC5500"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tAllSuggestions" />
+
+    <Button
+        android:id="@+id/BelowSuggestionsLine"
+        android:layout_width="300dp"
+        android:layout_height="6dp"
+        android:layout_marginBottom="264dp"
+        android:background="#CC5500"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bNextPageTwo"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/round_button_orange"
+        android:text="@string/next_page"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bPreviousPageTwo"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/round_button_orange"
+        android:text="@string/previous_page"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bClearAllTwo"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/round_button_orange"
+        android:text="@string/clear_all"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

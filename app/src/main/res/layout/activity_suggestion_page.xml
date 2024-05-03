@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestionPage"
+    android:background="@drawable/TheOfficialBG">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/make_a_suggestion_below"
+        android:textColor="#FFFF00"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LineUnderTitle"
+        android:layout_width="320dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="2dp"
+        android:background="#CC5500"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/LineUnderTypingBox"
+        android:layout_width="280dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="392dp"
+        android:background="#CC5500"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LineUnderTitle" />
+
+    <Button
+        android:id="@+id/bClearNotification"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/round_button_orange"
+        android:text="@string/clear"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bSendNotification"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/round_button_orange"
+        android:text="@string/send"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

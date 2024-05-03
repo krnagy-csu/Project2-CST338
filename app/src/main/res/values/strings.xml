@@ -11,10 +11,8 @@
     <string name="admin_options_top_right_btn">Admin Options</string>
     <string name="make_new_list">Make New List</string>
     <string name="view_existing_lists">View Existing Lists</string>
-    <string name="store">Store</string>
     <string name="tutorial">Tutorial</string>
     <string name="stats">Stats</string>
-    <string name="notifications">Notifications</string>
     <string name="help">Help</string>
     <string name="welcome_user">Welcome User!</string>
     <string name="select_a_topic">Select A Topic</string>
@@ -24,7 +22,7 @@
     <string name="game_modes">Game Modes</string>
     <string name="s_tier_tiers">S Tier Tiers</string>
     <string name="randomize">Randomize</string>
-    <string name="clear">Clear</string>
+
     <string name="save">Save</string>
     <string name="s">S</string>
     <string name="a">A</string>
@@ -35,4 +33,24 @@
     <string name="select_game_mode">Select Game Mode</string>
     <string name="color_match">Color Match</string>
     <string name="speed_run">Speed Run</string>
+    <string name="finished_lists">Finished Lists</string>
+    <string name="previous_page">Previous Page</string>
+    <string name="next_page">Next Page</string>
+    <string name="store">Store</string>
+    <string name="remove_ads_500g">Remove Ads 500g</string>
+    <string name="backgrounds">Backgrounds</string>
+    <string name="background_store">Background Store</string>
+    <string name="background_one_50g">Background One 50g</string>
+    <string name="background_two_100g">Background Two 100g</string>
+    <string name="background_three_200g">Background Three 200g</string>
+    <string name="background_four_300g">Background Four 300g</string>
+    <string name="stats_page">Stats Page</string>
+    <string name="score">Score:</string>
+    <string name="gold">Gold:</string>
+    <string name="clear">Clear</string>
+    <string name="send">Send</string>
+    <string name="make_a_suggestion_below">Make A Suggestion Below!</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">Clear All</string>
+    <string name="all_suggestions">All Suggestions</string>
 </resources>
