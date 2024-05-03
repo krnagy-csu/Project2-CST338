@@ -11,4 +11,7 @@
     <string name="background_two_100g">Background Two 100g</string>
     <string name="background_three_200g">Background Three 200g</string>
     <string name="background_four_300g">Background Four 300g</string>
+    <string name="stats_page">Stats Page</string>
+    <string name="score">Score:</string>
+    <string name="gold">Gold:</string>
 </resources>
