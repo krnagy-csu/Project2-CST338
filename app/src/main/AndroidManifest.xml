@@ -21,17 +21,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LandingActivity"
             android:exported="true">
-
         </activity>
-        <activity android:name=".SignUpActivity">
 
-        </activity>
-        <activity android:name=".AdminOptionsActivity">
+        <activity android:name=".SignUpActivity"/>
 
-        </activity>
+        <activity android:name=".AdminOptionsActivity"/>
+
+        <activity android:name=".TopicSelectionActivity"/>
+
+        <activity android:name=".TierListActivity"/>
+
     </application>
 
 </manifest>
