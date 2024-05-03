@@ -14,4 +14,7 @@
     <string name="stats_page">Stats Page</string>
     <string name="score">Score:</string>
     <string name="gold">Gold:</string>
+    <string name="clear">Clear</string>
+    <string name="send">Send</string>
+    <string name="make_a_suggestion_below">Make A Suggestion Below!</string>
 </resources>
