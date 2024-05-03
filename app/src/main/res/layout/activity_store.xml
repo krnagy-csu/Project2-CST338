@@ -12,19 +12,23 @@
         android:id="@+id/LeftStarFive"
         android:layout_width="65dp"
         android:layout_height="84dp"
-        app:tint="#FFFF00"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/tStore"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:tint="#FFFF00"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="65dp"
         android:layout_height="84dp"
-        app:tint="#FFFF00"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/tStore"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:tint="#FFFF00"
+        tools:ignore="ContentDescription"/>
 
     <Button
         android:id="@+id/UnderLineOne"
