@@ -17,4 +17,6 @@
     <string name="clear">Clear</string>
     <string name="send">Send</string>
     <string name="make_a_suggestion_below">Make A Suggestion Below!</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">Clear All</string>
 </resources>
