@@ -6,4 +6,9 @@
     <string name="store">Store</string>
     <string name="remove_ads_500g">Remove Ads 500g</string>
     <string name="backgrounds">Backgrounds</string>
+    <string name="background_store">Background Store</string>
+    <string name="background_one_50g">Background One 50g</string>
+    <string name="background_two_100g">Background Two 100g</string>
+    <string name="background_three_200g">Background Three 200g</string>
+    <string name="background_four_300g">Background Four 300g</string>
 </resources>
