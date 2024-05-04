@@ -28,6 +28,7 @@
         android:id="@+id/BTierImage"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/ATierImage"
         app:layout_constraintStart_toStartOf="@+id/ATierImage"
         app:layout_constraintTop_toBottomOf="@+id/ATierImage"

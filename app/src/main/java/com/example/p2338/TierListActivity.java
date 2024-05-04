@@ -29,32 +29,39 @@ public class TierListActivity extends AppCompatActivity {
         String title;
 
         setContentView(R.layout.activity_tierlist);
-        try{
-            isAdmin=extras.getBoolean("Admin");
-        }catch (NullPointerException e){
-            Log.e(TAG,"Failed to get/set admin status. Defaulting to &quot;false%quot;");
+        try {
+            isAdmin = extras.getBoolean("Admin");
+        } catch (NullPointerException e) {
+            Log.e(TAG, "Failed to get/set admin status. Defaulting to &quot;false%quot;");
         }
 
         populateDraggables();
         populateTierImages();
 
-        TextView titleText =  findViewById(R.id.tierListTitleTextView);
+        TextView titleText = findViewById(R.id.tierListTitleTextView);
         try {
             topic = extras.getInt("Topic");
-        } catch (Exception e){
-            Log.e(TAG,"Failed to get topic.");
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to get topic.");
         }
-        if (topic == 0){
+        if (topic == 0) {
             title = "Placeholder";
-        } else if(topic == 1){
+        } else if (topic == 1) {
             title = "Topic1";
-        } else if(topic == 2){
+        } else if (topic == 2) {
             title = "Topic2";
         } else {
             title = "Topic3";
         }
 
         titleText.setText(title);
+
+        for (View v : draggables){
+            v.setActivated(true);
+            v.setVisibility(View.VISIBLE);
+        }
+
+
 
         DragStartHelper.OnDragStartListener listener = new DragStartHelper.OnDragStartListener() {
             @Override
