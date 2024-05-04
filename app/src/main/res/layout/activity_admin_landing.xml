@@ -16,7 +16,7 @@
         android:background="@drawable/round_button"
         android:text="@string/admin_options_top_right_btn"
         android:textAllCaps="false"
-        android:textColor="#0423BF"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.939"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,21 +49,6 @@
         app:layout_constraintTop_toBottomOf="@+id/bViewExistingLists" />
 
     <ImageView
-        android:id="@+id/LeftStarBottomRight"
-        android:layout_width="89dp"
-        android:layout_height="60dp"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/bNotifications"
-        app:srcCompat="@android:drawable/btn_star"
-        app:tint="#FFFF00"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
         android:id="@+id/RightStar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,20 +62,6 @@
         app:tint="#FFFF00"
         tools:ignore="ContentDescription" />
 
-    <Button
-        android:id="@+id/bHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="160dp"
-        android:background="@drawable/round_button"
-        android:text="@string/help"
-        android:textColor="#FAF500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bStats" />
-
     <ImageView
         android:id="@+id/LeftStar"
         android:layout_width="wrap_content"
@@ -103,32 +74,6 @@
         app:srcCompat="@android:drawable/btn_star"
         app:tint="#FFFF00"
         tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/LeftStarBottom"
-        android:layout_width="89dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="724dp"
-        app:layout_constraintEnd_toStartOf="@+id/bStore"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_star"
-        app:tint="#FFFF00"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/bNotifications"
-        android:layout_width="140dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/round_button"
-        android:text="@string/notifications"
-        android:textColor="#FAF500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bTutorial"
@@ -147,14 +92,52 @@
         android:id="@+id/bStats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="276dp"
         android:background="@drawable/round_button"
         android:text="@string/stats"
         android:textColor="#FAF500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/round_button"
+        android:text="@string/help"
+        android:textColor="#FAF500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/LeftStarBottomRight"
+        android:layout_width="89dp"
+        android:layout_height="60dp"
+
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/btn_star"
+        app:tint="#FFFF00"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/LeftStarBottom"
+        android:layout_width="89dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star"
+        app:tint="#FFFF00"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/bViewExistingLists"
@@ -193,6 +176,18 @@
         app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BottomLineTen"
+        android:layout_width="246dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_line_button"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/bStats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/BottomLineOne"
