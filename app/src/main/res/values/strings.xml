@@ -11,4 +11,5 @@
     <string name="topic_2">Topic 2</string>
     <string name="topic_3">Topic 3</string>
     <string name="select_topic">SELECT TOPIC</string>
+    <string name="please_log_in_sign_in">Please log in.</string>
 </resources>
