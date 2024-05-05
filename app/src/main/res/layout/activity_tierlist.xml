@@ -5,156 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/STierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ATierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintEnd_toEndOf="@+id/STierImage"
-        app:layout_constraintStart_toStartOf="@+id/STierImage"
-        app:layout_constraintTop_toBottomOf="@+id/STierImage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/BTierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/ATierImage"
-        app:layout_constraintStart_toStartOf="@+id/ATierImage"
-        app:layout_constraintTop_toBottomOf="@+id/ATierImage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/CTierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintEnd_toEndOf="@+id/BTierImage"
-        app:layout_constraintStart_toStartOf="@+id/BTierImage"
-        app:layout_constraintTop_toBottomOf="@+id/BTierImage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/DTierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintEnd_toEndOf="@+id/CTierImage"
-        app:layout_constraintStart_toStartOf="@+id/CTierImage"
-        app:layout_constraintTop_toBottomOf="@+id/CTierImage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/FTierImage"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintEnd_toEndOf="@+id/DTierImage"
-        app:layout_constraintStart_toStartOf="@+id/DTierImage"
-        app:layout_constraintTop_toBottomOf="@+id/DTierImage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable2"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintEnd_toStartOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable1"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintEnd_toStartOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable10"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="81dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintStart_toEndOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable9"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintStart_toEndOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable4"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintStart_toEndOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable6"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="81dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintEnd_toStartOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable8"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
-        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
-        app:layout_constraintStart_toStartOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable7"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintEnd_toStartOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable5"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        app:layout_constraintStart_toEndOf="@+id/TLGuide"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/TLDraggable3"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/TLDraggable8"
-        tools:layout_editor_absoluteX="173dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <TextView
         android:id="@+id/TLGuide"
         android:layout_width="wrap_content"
@@ -171,11 +21,89 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="150dp"
         android:text="PLACEHOLDER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tierSimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stierimg" />
+
+    <ImageView
+        android:id="@+id/tierAimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierSimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierSimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierSimg"
+        app:srcCompat="@drawable/atierimg" />
+
+    <ImageView
+        android:id="@+id/tierBimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierAimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierAimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierAimg"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageView
+        android:id="@+id/tierCimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierBimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierBimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierBimg"
+        app:srcCompat="@drawable/ctierimg" />
+
+    <ImageView
+        android:id="@+id/tierDimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierCimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierCimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierCimg"
+        app:srcCompat="@drawable/dtierimg" />
+
+    <ImageView
+        android:id="@+id/tierFimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierDimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierDimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierDimg"
+        app:srcCompat="@drawable/ftierimg" />
+
+    <ImageView
+        android:id="@+id/bgStier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierSimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierSimg"
+        app:layout_constraintTop_toTopOf="@+id/tierSimg"
+        app:srcCompat="@drawable/darkgreyblank" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

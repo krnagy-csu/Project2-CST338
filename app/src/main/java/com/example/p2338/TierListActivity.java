@@ -72,6 +72,7 @@ public class TierListActivity extends AppCompatActivity {
     }
 
     private void populateDraggables(){
+        /*
         draggables.add(findViewById(R.id.TLDraggable1));
         draggables.add(findViewById(R.id.TLDraggable2));
         draggables.add(findViewById(R.id.TLDraggable3));
@@ -81,15 +82,16 @@ public class TierListActivity extends AppCompatActivity {
         draggables.add(findViewById(R.id.TLDraggable7));
         draggables.add(findViewById(R.id.TLDraggable8));
         draggables.add(findViewById(R.id.TLDraggable9));
-        draggables.add(findViewById(R.id.TLDraggable10));
+        draggables.add(findViewById(R.id.TLDraggable10);
+         */
     }
 
     private void populateTierImages(){
-        tierImages.add(findViewById(R.id.STierImage));
-        tierImages.add(findViewById(R.id.ATierImage));
-        tierImages.add(findViewById(R.id.BTierImage));
-        tierImages.add(findViewById(R.id.CTierImage));
-        tierImages.add(findViewById(R.id.DTierImage));
-        tierImages.add(findViewById(R.id.FTierImage));
+        tierImages.add(findViewById(R.id.tierSimg));
+        tierImages.add(findViewById(R.id.tierAimg));
+        tierImages.add(findViewById(R.id.tierBimg));
+        tierImages.add(findViewById(R.id.tierCimg));
+        tierImages.add(findViewById(R.id.tierDimg));
+        tierImages.add(findViewById(R.id.tierFimg));
     }
 }
