@@ -36,9 +36,8 @@ public class TierListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
         String title;
-
         setContentView(R.layout.activity_tierlist);
-
+        repository = Project2Repository.getRepository(getApplication());
         try {
             isAdmin = extras.getBoolean("Admin");
             userID = extras.getInt("ID");

@@ -87,7 +87,11 @@ public class Project2Repository {
     public void InsertTierList(TierList tl){
         Project2Database.databaseWriteExecutor.execute(()->
                 {
-                    tierListDAO.insertTierList();
+                    try {
+                        tierListDAO.insertTierList();
+                    } catch (NullPointerException e){
+                        Log.e("REPO","Failed to insert tierlist!");
+                    }
                 });
     }
 
