@@ -11,7 +11,9 @@ import com.example.p2338.Database.Entities.User;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.MainActivity;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -114,6 +116,23 @@ public class Project2Repository {
                         Log.e("REPO",exception.toString());
                     }
                 });
+    }
+
+    public ArrayList<TierList> GetAllTierLists(){
+        Future<ArrayList<TierList>> future = Project2Database.databaseWriteExecutor.submit(
+                new Callable<ArrayList<TierList>>() {
+                    @Override
+                    public ArrayList<TierList> call() throws Exception {
+                        return (ArrayList<TierList>) tierListDAO.selectAllTierLists();
+                    }
+                }
+        );
+        try{
+            return future.get();
+        } catch (InterruptedException | ExecutionException e){
+            Log.w("LISTVIEWER","Unable to get list of lists.");
+        }
+        return null;
     }
 
     public void deleteTierList(TierList tl){

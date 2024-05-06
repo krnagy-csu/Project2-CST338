@@ -1,6 +1,9 @@
 package com.example.p2338;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,16 @@ public class StatsPage extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button backButton = findViewById(R.id.statsPageBackButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(StatsPageIntentFactory());
+            }
+        });
+    }
+    private Intent StatsPageIntentFactory(){
+        return new Intent(StatsPage.this, LandingActivity.class);
     }
 }

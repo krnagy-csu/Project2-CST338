@@ -15,6 +15,7 @@ public class TopicSelectionActivity extends AppCompatActivity {
     Intent topicSelIntent;
     String TAG = "TOPIC_ACTIVITY";
     boolean isAdmin = false;
+    private int userID;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,9 +54,22 @@ public class TopicSelectionActivity extends AppCompatActivity {
                 startActivity(topicSelIntent);
             }
         });
+
+        Button backButton = findViewById(R.id.topicSelBackButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backIntentFactory(TopicSelectionActivity.this);
+                startActivity(topicSelIntent);
+            }
+        });
     }
 
-
+    private void backIntentFactory (Context context){
+        topicSelIntent = new Intent(context,LandingActivity.class);
+        topicSelIntent.putExtra("Admin",isAdmin);
+        topicSelIntent.putExtra("UserID",userID);
+    }
 
     private void topicSelIntentFactory (Context context, int topic){
         topicSelIntent = new Intent(context, TierListActivity.class);

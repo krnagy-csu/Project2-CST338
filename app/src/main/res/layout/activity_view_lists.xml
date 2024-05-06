@@ -33,27 +33,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tFinishedLists" />
 
     <Button
-        android:id="@+id/bPreviousPage"
+        android:id="@+id/viewListsBackButton"
         android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/round_button_orange"
-        android:text="@string/previous_page"
+        android:text="BACK"
         android:textColor="#FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bNextPage"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/round_button_orange"
-        android:text="@string/next_page"
-        android:textColor="#FFFF00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
