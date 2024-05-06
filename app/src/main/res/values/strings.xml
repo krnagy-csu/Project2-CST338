@@ -36,4 +36,5 @@
     <string name="color_match">Color Match</string>
     <string name="speed_run">Speed Run</string>
     <string name="ss">SS</string>
+    <string name="background_store">Background Store</string>
 </resources>

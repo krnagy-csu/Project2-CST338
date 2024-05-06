@@ -41,7 +41,7 @@
         android:layout_height="56dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/round_button"
-        android:text="@string/store"
+        android:text="@string/background_store"
         android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -101,26 +101,13 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/bHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
-        android:background="@drawable/round_button"
-        android:text="@string/help"
-        android:textColor="#FAF500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/LeftStarBottomRight"
         android:layout_width="89dp"
         android:layout_height="60dp"
 
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="264dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/btn_star"
@@ -131,8 +118,8 @@
         android:id="@+id/LeftStarBottom"
         android:layout_width="89dp"
         android:layout_height="60dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="264dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/btn_star"

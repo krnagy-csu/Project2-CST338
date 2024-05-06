@@ -42,7 +42,7 @@
         android:id="@+id/bToggleDebugLog"
         android:layout_width="140dp"
         android:layout_height="64dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/round_button"
         android:text="@string/toggle_debug_log"
         android:textColor="#FAF500"
@@ -52,69 +52,30 @@
         app:layout_constraintTop_toBottomOf="@+id/bResetLists" />
 
     <Button
-        android:id="@+id/bToggleAds"
-        android:layout_width="140dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="30dp"
-        android:textSize="17sp"
-        android:background="@drawable/round_button"
-        android:text="@string/toggle_ads"
-        android:textColor="#FAF500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bToggleDebugLog" />
-
-    <Button
         android:id="@+id/bRemoveUser"
         android:layout_width="140dp"
         android:layout_height="64dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/round_button"
         android:text="@string/remove_user"
+        android:textColor="#FAF500"
         android:textSize="17sp"
-        android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bToggleAds" />
-
-    <Button
-        android:id="@+id/bGiveYourselfGold"
-        android:layout_width="140dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="30dp"
-        android:textSize="16sp"
-        android:textColor="#FAF500"
-        android:background="@drawable/round_button"
-        android:text="@string/give_yourself_gold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bRemoveUser" />
+        tools:layout_editor_absoluteY="331dp" />
 
     <Button
         android:id="@+id/bGiveYourselfScore"
         android:layout_width="140dp"
         android:layout_height="64dp"
-        android:layout_marginTop="30dp"
-        android:textColor="#FAF500"
-        android:textSize="16sp"
         android:background="@drawable/round_button"
         android:text="@string/give_yourself_score"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bGiveYourselfGold" />
-
-    <Button
-        android:id="@+id/bSeeSuggestions"
-        android:layout_width="140dp"
-        android:layout_height="64dp"
         android:textColor="#FAF500"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/round_button"
-        android:text="@string/see_suggestions"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bGiveYourselfScore" />
+        tools:layout_editor_absoluteY="472dp" />
 
     <ImageView
         android:id="@+id/LeftStar"
