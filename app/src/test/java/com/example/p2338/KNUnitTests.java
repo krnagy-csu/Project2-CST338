@@ -38,6 +38,9 @@ public class KNUnitTests {
 
         tierList.setTierF("F+");
         assertEquals("F+", tierList.getTierF());
+
+        tierList.setTopic("Food");
+        assertEquals("Food",tierList.getTopic());
     }
 
     @Test

@@ -23,6 +23,7 @@ public class Project2Repository {
     public Project2Repository (Application application){
         Project2Database db = Project2Database.getDatabase(application);
         this.userDAO = db.userDAO();
+        this.tierListDAO = db.tierListDAO();
         this.allUsers = (ArrayList<User>) this.userDAO.getAllUsers();
     }
 
@@ -89,8 +90,9 @@ public class Project2Repository {
                 {
                     try {
                         tierListDAO.insertTierList();
-                    } catch (NullPointerException e){
+                    } catch (Exception exception){
                         Log.e("REPO","Failed to insert tierlist!");
+                        Log.e("REPO",exception.toString());
                     }
                 });
     }

@@ -11,6 +11,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.example.p2338.Database.Entities.TierList;
 import com.example.p2338.Database.Entities.TierListDAO;
+import com.example.p2338.Database.Entities.TierListImage;
+import com.example.p2338.Database.Entities.TierListImageDAO;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.MainActivity;
 
@@ -19,10 +21,11 @@ import java.util.concurrent.Executors;
 
 import com.example.p2338.Database.Entities.User;
 
-@Database(entities = {User.class, TierList.class}, version = 6, exportSchema = false)
+@Database(entities = {User.class, TierList.class, TierListImage.class}, version = 7, exportSchema = false)
 public abstract class Project2Database extends RoomDatabase {
     public static final String USER_TABLE = "userTable";
     public static final String TIERLIST_TABLE = "tierListTable";
+    public static final String TL_IMAGE_TABLE = "imageTable";
     private static final String DATABASE_NAME = "Project2Database";
     private static volatile Project2Database INSTANCE;
     private static final int NUMBER_OF_THREADS = 4;
@@ -66,6 +69,6 @@ public abstract class Project2Database extends RoomDatabase {
     };
 
     public abstract UserDAO userDAO();
-
     public abstract TierListDAO tierListDAO();
+    public abstract TierListImageDAO tierListImageDAO();
 }

@@ -18,6 +18,7 @@ public class TierList {
     private String tierC;
     private String tierD;
     private String tierF;
+    private String topic;
 
     public TierList(String tierS, String tierA, String tierB, String tierC, String tierD, String tierF) {
         this.tierS = tierS;
@@ -34,6 +35,14 @@ public class TierList {
 
     public void setTlID(int tlID) {
         this.tlID = tlID;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
     }
 
     public int getUserID() {

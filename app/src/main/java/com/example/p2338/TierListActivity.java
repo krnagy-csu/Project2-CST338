@@ -41,8 +41,9 @@ public class TierListActivity extends AppCompatActivity {
         try {
             isAdmin = extras.getBoolean("Admin");
             userID = extras.getInt("ID");
-        } catch (NullPointerException e) {
+        } catch (Exception e) {
             Log.e(TAG, "Failed to get/set admin status and/or ID. Defaulting to &quot;false%quot;");
+            Log.e(TAG, e.toString());
         }
 
         populateTierItems();
@@ -57,7 +58,7 @@ public class TierListActivity extends AppCompatActivity {
         if (topic == 0) {
             title = "Placeholder";
         } else if (topic == 1) {
-            title = "Topic1";
+            title = "Fruit";
         } else if (topic == 2) {
             title = "Topic2";
         } else {
@@ -166,4 +167,20 @@ public class TierListActivity extends AppCompatActivity {
         i.putExtra("ID",userID);
         return i;
     }
+
+    private void setImages(){
+        if (topic == 1){
+            setImagesT1();
+        }
+        else if (topic == 2){
+            setImagesT2();
+        }
+        else {
+            setImagesT3();
+        }
+    }
+
+    private void setImagesT1(){}
+    private void setImagesT2(){}
+    private void setImagesT3(){}
 }
