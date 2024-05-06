@@ -9,6 +9,8 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.example.p2338.Database.Entities.TierList;
+import com.example.p2338.Database.Entities.TierListDAO;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.MainActivity;
 
@@ -17,7 +19,7 @@ import java.util.concurrent.Executors;
 
 import com.example.p2338.Database.Entities.User;
 
-@Database(entities = User.class, version = 4, exportSchema = false)
+@Database(entities = {User.class, TierList.class}, version = 6, exportSchema = false)
 public abstract class Project2Database extends RoomDatabase {
     public static final String USER_TABLE = "userTable";
     public static final String TIERLIST_TABLE = "tierListTable";
@@ -64,4 +66,6 @@ public abstract class Project2Database extends RoomDatabase {
     };
 
     public abstract UserDAO userDAO();
+
+    public abstract TierListDAO tierListDAO();
 }
