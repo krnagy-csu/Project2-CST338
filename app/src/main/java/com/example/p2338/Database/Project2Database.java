@@ -64,6 +64,7 @@ public abstract class Project2Database extends RoomDatabase {
                 User testUser1 = new User("testUser1", "testUser1", false);
                 dao.insert(testUser1);
                 Log.i("DBSETUP","added Test User 1");
+
             });
         }
     };
@@ -71,4 +72,5 @@ public abstract class Project2Database extends RoomDatabase {
     public abstract UserDAO userDAO();
     public abstract TierListDAO tierListDAO();
     public abstract TierListImageDAO tierListImageDAO();
+
 }

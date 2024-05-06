@@ -60,11 +60,11 @@ public class TierListActivity extends AppCompatActivity {
         } else if (topic == 1) {
             title = "Fruit";
         } else if (topic == 2) {
-            title = "Topic2";
+            title = "Fast Food";
         } else {
             title = "Topic3";
         }
-
+        setImages();
         titleText.setText(title);
 
         populateTierBacks();
@@ -175,12 +175,30 @@ public class TierListActivity extends AppCompatActivity {
         else if (topic == 2){
             setImagesT2();
         }
-        else {
-            setImagesT3();
-        }
     }
 
-    private void setImagesT1(){}
-    private void setImagesT2(){}
-    private void setImagesT3(){}
+    private void setImagesT1(){
+        tierItems.get(0).setImageResource(R.drawable.apple);
+        tierItems.get(1).setImageResource(R.drawable.pear);
+        tierItems.get(2).setImageResource(R.drawable.cherries);
+        tierItems.get(3).setImageResource(R.drawable.blueberry);
+        tierItems.get(4).setImageResource(R.drawable.grapes);
+        tierItems.get(5).setImageResource(R.drawable.kiwi);
+        tierItems.get(6).setImageResource(R.drawable.lemon);
+        tierItems.get(7).setImageResource(R.drawable.orange);
+        tierItems.get(8).setImageResource(R.drawable.lime);
+        tierItems.get(9).setImageResource(R.drawable.raspberry);
+    }
+    private void setImagesT2(){
+        tierItems.get(0).setImageResource(R.drawable.maccas);
+        tierItems.get(1).setImageResource(R.drawable.burgerking);
+        tierItems.get(2).setImageResource(R.drawable.kfc);
+        tierItems.get(3).setImageResource(R.drawable.tacobell);
+        tierItems.get(4).setImageResource(R.drawable.carlsjr);
+        tierItems.get(5).setImageResource(R.drawable.chickfila);
+        tierItems.get(6).setImageResource(R.drawable.chipotle);
+        tierItems.get(7).setImageResource(R.drawable.pandaexpress);
+        tierItems.get(8).setImageResource(R.drawable.starbucks);
+        tierItems.get(9).setImageResource(R.drawable.jackinthebox);
+    }
 }
