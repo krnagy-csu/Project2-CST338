@@ -15,7 +15,7 @@ public class LandingActivity extends AppCompatActivity {
     public final String TAG = "LANDING";
 
     private boolean isAdmin;
-
+    private int userID;
     private static Intent mainIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +40,19 @@ public class LandingActivity extends AppCompatActivity {
         }
         nameField.setText(nameString);
         if (!isAdmin){
-            adminButton.setVisibility(View.INVISIBLE);
+            adminButton.setVisibility(View.GONE);
         }
         else {
             adminButton.setVisibility(View.VISIBLE);
         }
+
+        adminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                adminIntentFactory(LandingActivity.this);
+                startActivity(mainIntent);
+            }
+        });
         logoutButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -61,6 +69,35 @@ public class LandingActivity extends AppCompatActivity {
             }
         });
 
+        Button viewListButton = findViewById(R.id.toListViewButton);
+        viewListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listViewerIntentFactory(LandingActivity.this);
+                startActivity(mainIntent);
+            }
+        });
+
+        Button storeButton = findViewById(R.id.storeButton);
+        storeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                storeIntentFactory(LandingActivity.this);
+                startActivity(mainIntent);
+            }
+        });
+
+        Button statsButton = findViewById(R.id.statButton);
+        statsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                statsIntentFactory(LandingActivity.this);
+                startActivity(mainIntent);
+            }
+        });
+
+
+
     }
 
     private void logOutIntentFactory(Context context){
@@ -70,5 +107,28 @@ public class LandingActivity extends AppCompatActivity {
     private void listMakerIntentFactory (Context context){
         mainIntent = new Intent(context, TopicSelectionActivity.class);
         mainIntent.putExtra("Admin", isAdmin);
+        mainIntent.putExtra("UserID",userID);
+    }
+    private void listViewerIntentFactory(Context context){
+        mainIntent = new Intent(context, ViewLists.class);
+        mainIntent.putExtra("Admin", isAdmin);
+        mainIntent.putExtra("UserID",userID);
+    }
+
+    private void adminIntentFactory (Context context){
+        mainIntent = new Intent(context,AdminOptionsActivity.class);
+        mainIntent.putExtra("UserID",userID);
+    }
+
+    private void storeIntentFactory (Context context){
+        mainIntent = new Intent(context, StoreActivity.class);
+        mainIntent.putExtra("UserID",userID);
+        mainIntent.putExtra("Admin",isAdmin);
+    }
+
+    private void statsIntentFactory (Context context){
+        mainIntent = new Intent(context,StatsPage.class);
+        mainIntent.putExtra("UserID",userID);
+        mainIntent.putExtra("Admin",isAdmin);
     }
 }

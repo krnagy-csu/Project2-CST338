@@ -45,7 +45,7 @@
 
 
     <Button
-        android:id="@+id/bFood"
+        android:id="@+id/bFruit"
         android:layout_width="140dp"
         android:layout_height="80dp"
         android:layout_marginTop="44dp"
@@ -58,17 +58,17 @@
         app:layout_constraintTop_toBottomOf="@+id/BottomLineThree" />
 
     <Button
-        android:id="@+id/bSports"
+        android:id="@+id/bFastFood"
         android:layout_width="140dp"
         android:layout_height="80dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/round_button"
-        android:text="@string/sports"
+        android:text="FastFood"
         android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bFood" />
+        app:layout_constraintTop_toBottomOf="@+id/bFruit" />
 
     <Button
         android:id="@+id/bAndroidIcons"
@@ -76,34 +76,19 @@
         android:layout_height="80dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/round_button"
-        android:text="@string/android_icons"
+        android:text="B"
         android:textColor="#FAF500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bSports" />
-
-    <Button
-        android:id="@+id/bGameModes"
-        android:layout_width="140dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/round_button"
-        android:text="@string/game_modes"
-        android:textColor="#FAF500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bAndroidIcons" />
+        app:layout_constraintTop_toBottomOf="@+id/bFastFood" />
 
     <ImageView
         android:id="@+id/WeirdStarLeftOne"
         android:layout_width="69dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bGameModes"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="@+id/bAndroidIcons"
+        app:layout_constraintEnd_toStartOf="@+id/bAndroidIcons"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_compass"
         app:tint="#FAF500"
@@ -113,11 +98,9 @@
         android:id="@+id/WeirdStarRightOne"
         android:layout_width="80dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bAndroidIcons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/bGameModes"
+        app:layout_constraintStart_toEndOf="@+id/bAndroidIcons"
         app:srcCompat="@android:drawable/ic_menu_compass"
         app:tint="#FAF500"
         tools:ignore="ContentDescription" />

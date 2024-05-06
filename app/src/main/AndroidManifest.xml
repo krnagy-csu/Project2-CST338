@@ -29,16 +29,13 @@
             android:name=".Backgrounds"
             android:exported="false" />
         <activity
-            android:name=".Store"
+            android:name=".StoreActivity"
             android:exported="false" />
         <activity
             android:name=".GameModes"
             android:exported="false" />
         <activity
             android:name=".ListMaker"
-            android:exported="false" />
-        <activity
-            android:name=".topic_selection"
             android:exported="false" />
         <activity
             android:name=".admin_landing"
@@ -68,6 +65,8 @@
         <activity android:name=".TopicSelectionActivity"/>
 
         <activity android:name=".TierListActivity"/>
+
+        <activity android:name=".ViewLists"/>
 
     </application>
 

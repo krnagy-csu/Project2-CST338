@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/officialbackground">
 
     <TextView
         android:id="@+id/TLGuide"
@@ -176,8 +177,8 @@
         android:id="@+id/TLItem0"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="72dp"
         android:layout_marginEnd="124dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintEnd_toEndOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -186,8 +187,8 @@
         android:id="@+id/TLItem1"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="72dp"
         android:layout_marginEnd="56dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintEnd_toEndOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -206,8 +207,8 @@
         android:id="@+id/TLItem3"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="72dp"
         android:layout_marginStart="56dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintStart_toStartOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -216,8 +217,8 @@
         android:id="@+id/TLItem4"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="72dp"
         android:layout_marginStart="124dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintStart_toStartOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -226,8 +227,8 @@
         android:id="@+id/TLItem5"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginEnd="124dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintEnd_toEndOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -236,8 +237,8 @@
         android:id="@+id/TLItem6"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginEnd="56dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintEnd_toEndOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -256,8 +257,8 @@
         android:id="@+id/TLItem8"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginStart="56dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintStart_toStartOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />
@@ -266,8 +267,8 @@
         android:id="@+id/TLItem9"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="4dp"
         android:layout_marginStart="124dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/TLGuide"
         app:layout_constraintStart_toStartOf="@+id/TLGuide"
         app:srcCompat="@drawable/btierimg" />

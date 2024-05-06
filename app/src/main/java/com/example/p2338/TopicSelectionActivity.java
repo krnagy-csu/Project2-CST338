@@ -18,7 +18,7 @@ public class TopicSelectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_topicsel);
+        setContentView(R.layout.activity_topic_selection);
 
         try{
             isAdmin = getIntent().getExtras().getBoolean("Admin");
@@ -26,9 +26,9 @@ public class TopicSelectionActivity extends AppCompatActivity {
             Log.e(TAG,"Unable to get Admin status, defaulting to false.");
             isAdmin = false;
         }
-        Button button1 = findViewById(R.id.topicselbutton1);
-        Button button2 = findViewById(R.id.topicselbutton2);
-        Button button3 = findViewById(R.id.topicselbutton3);
+        Button button1 = findViewById(R.id.bFruit);
+        Button button2 = findViewById(R.id.bFastFood);
+        Button button3 = findViewById(R.id.bAndroidIcons);
 
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
