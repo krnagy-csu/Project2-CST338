@@ -71,20 +71,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bRandomize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="48dp"
-        android:background="@drawable/round_button"
-        android:text="@string/randomize"
-        android:textColor="#FAF500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bClear"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/bClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,7 +80,7 @@
         android:textColor="#FAF500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -108,7 +94,7 @@
         android:textColor="#FAF500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toEndOf="@+id/bClear" />
 
     <Button
