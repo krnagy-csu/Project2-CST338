@@ -50,10 +50,10 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginStart="120dp"
-        android:textColor="#FFFF00"
         android:layout_marginTop="80dp"
         android:background="@drawable/round_button_orange"
-        android:text="@string/background_one_50g"
+        android:text="BACKGROUND ONE"
+        android:textColor="#FFFF00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UnderLineTwo" />
 
@@ -64,33 +64,9 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/round_button_orange"
-        android:text="@string/background_two_100g"
+        android:text="BACKGROUND TWO"
         android:textColor="#FFFF00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bBackgroundOne" />
-
-    <Button
-        android:id="@+id/bBackgroundThree"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/round_button_orange"
-        android:text="@string/background_three_200g"
-        android:textColor="#FFFF00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bBackgroundTwo" />
-
-    <Button
-        android:id="@+id/bBackgroundFour"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="68dp"
-        android:background="@drawable/round_button_orange"
-        android:text="@string/background_four_300g"
-        android:textColor="#FFFF00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bBackgroundThree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

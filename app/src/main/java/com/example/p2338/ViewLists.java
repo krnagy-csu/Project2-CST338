@@ -8,8 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ViewLists extends AppCompatActivity {
+import com.example.p2338.Database.Entities.TierList;
+import com.example.p2338.Database.Project2Repository;
 
+import java.util.ArrayList;
+
+public class ViewLists extends AppCompatActivity {
+    private Project2Repository repo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +25,9 @@ public class ViewLists extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        repo = Project2Repository.getRepository(getApplication());
+
+        ArrayList<TierList> tierLists;
+
     }
 }
