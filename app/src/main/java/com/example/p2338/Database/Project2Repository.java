@@ -3,6 +3,8 @@ package com.example.p2338.Database;
 import android.app.Application;
 import android.util.Log;
 
+import com.example.p2338.Database.Entities.TierList;
+import com.example.p2338.Database.Entities.TierListDAO;
 import com.example.p2338.Database.Entities.User;
 import com.example.p2338.Database.Entities.UserDAO;
 import com.example.p2338.MainActivity;
@@ -14,7 +16,9 @@ import java.util.concurrent.Future;
 
 public class Project2Repository {
     private UserDAO userDAO;
+    private TierListDAO tierListDAO;
     private ArrayList<User> allUsers;
+    private ArrayList<TierList> allTierLists;
 
     public Project2Repository (Application application){
         Project2Database db = Project2Database.getDatabase(application);
@@ -78,6 +82,21 @@ public class Project2Repository {
             Log.w(MainActivity.TAG,"Error getting user by name.");
         }
         return null;
+    }
+
+    public void InsertTierList(TierList tl){
+        Project2Database.databaseWriteExecutor.execute(()->
+                {
+                    tierListDAO.insertTierList();
+                });
+    }
+
+    public void deleteTierList(TierList tl){
+        try {
+            tierListDAO.deleteTierList(tl);
+        }catch (Exception e){
+            Log.e("REPO",e.toString());
+        }
     }
 }
 

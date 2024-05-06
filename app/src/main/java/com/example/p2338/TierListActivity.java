@@ -1,36 +1,33 @@
 package com.example.p2338;
 
-import static androidx.core.view.ViewCompat.startDragAndDrop;
-
-import android.graphics.Point;
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
-import androidx.core.view.DragStartHelper;
+
+import com.example.p2338.Database.Entities.TierList;
+import com.example.p2338.Database.Project2Repository;
 
 import java.util.ArrayList;
 
 public class TierListActivity extends AppCompatActivity {
     boolean isAdmin = false;
+    Integer userID = 0;
     Integer topic = 0;
     Integer highlighted = 10;
     String TAG = "TIERLIST_ACTIVITY";
     ArrayList<ImageButton> tierItems = new ArrayList<ImageButton>();
     ArrayList<View> tierImages = new ArrayList<View>();
-
     ArrayList <ImageButton> tierBacks = new ArrayList<ImageButton>();
-
+    private Project2Repository repository;
     String[] tiers = {"","","","","",""};
     Boolean[] placed = {false,false,false,false,false,false,false,false,false,false};
     
@@ -41,10 +38,12 @@ public class TierListActivity extends AppCompatActivity {
         String title;
 
         setContentView(R.layout.activity_tierlist);
+
         try {
             isAdmin = extras.getBoolean("Admin");
+            userID = extras.getInt("ID");
         } catch (NullPointerException e) {
-            Log.e(TAG, "Failed to get/set admin status. Defaulting to &quot;false%quot;");
+            Log.e(TAG, "Failed to get/set admin status and/or ID. Defaulting to &quot;false%quot;");
         }
 
         populateTierItems();
@@ -69,6 +68,26 @@ public class TierListActivity extends AppCompatActivity {
         titleText.setText(title);
 
         populateTierBacks();
+
+        Button backButton = findViewById(R.id.tierListBackButton);
+
+        Button saveButton = findViewById(R.id.saveButton);
+
+        backButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(goBack());
+            }
+        });
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TierList savedList = new TierList(tiers[0],tiers[1],tiers[2],tiers[3],tiers[4],tiers[5]);
+                savedList.setUserID(userID);
+                repository.InsertTierList(savedList);
+            }
+        });
 
         for (ImageButton tierBack : tierBacks) {
             tierBack.setOnClickListener(new View.OnClickListener() {
@@ -140,5 +159,12 @@ public class TierListActivity extends AppCompatActivity {
         tierBacks.add(3,findViewById(R.id.bgCtier));
         tierBacks.add(4,findViewById(R.id.bgDtier));
         tierBacks.add(5,findViewById(R.id.bgFtier));
+    }
+
+    private Intent goBack(){
+        Intent i = new Intent(TierListActivity.this,TopicSelectionActivity.class);
+        i.putExtra("Admin",isAdmin);
+        i.putExtra("ID",userID);
+        return i;
     }
 }
