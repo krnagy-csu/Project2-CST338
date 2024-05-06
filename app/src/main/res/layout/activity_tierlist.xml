@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TLGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="     .     "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tierSimg" />
+
+    <TextView
+        android:id="@+id/tierListTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150dp"
+        android:text="PLACEHOLDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/tierSimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stierimg" />
+
+    <ImageButton
+        android:id="@+id/tierAimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierSimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierSimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierSimg"
+        app:srcCompat="@drawable/atierimg" />
+
+    <ImageButton
+        android:id="@+id/tierBimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierAimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierAimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierAimg"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/tierCimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierBimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierBimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierBimg"
+        app:srcCompat="@drawable/ctierimg" />
+
+    <ImageButton
+        android:id="@+id/tierDimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierCimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierCimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierCimg"
+        app:srcCompat="@drawable/dtierimg" />
+
+    <ImageButton
+        android:id="@+id/tierFimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tierDimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tierDimg"
+        app:layout_constraintTop_toBottomOf="@+id/tierDimg"
+        app:srcCompat="@drawable/ftierimg" />
+
+    <ImageButton
+        android:id="@+id/bgStier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierSimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierSimg"
+        app:layout_constraintTop_toTopOf="@+id/tierSimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/bgAtier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierAimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierAimg"
+        app:layout_constraintTop_toTopOf="@+id/tierAimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/bgBtier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierBimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierBimg"
+        app:layout_constraintTop_toTopOf="@+id/tierBimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/bgCtier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierCimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierCimg"
+        app:layout_constraintTop_toTopOf="@+id/tierCimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/bgDtier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierDimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierDimg"
+        app:layout_constraintTop_toTopOf="@+id/tierDimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/bgFtier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/tierFimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/tierFimg"
+        app:layout_constraintTop_toTopOf="@+id/tierFimg"
+        app:srcCompat="@drawable/darkgreyblank" />
+
+    <ImageButton
+        android:id="@+id/TLItem0"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem7"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintEnd_toEndOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem8"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <ImageButton
+        android:id="@+id/TLItem9"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/TLGuide"
+        app:layout_constraintStart_toStartOf="@+id/TLGuide"
+        app:srcCompat="@drawable/btierimg" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/tierListBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

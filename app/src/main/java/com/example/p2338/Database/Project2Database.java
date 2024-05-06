@@ -17,9 +17,10 @@ import java.util.concurrent.Executors;
 
 import com.example.p2338.Database.Entities.User;
 
-@Database(entities = User.class, version = 3, exportSchema = false)
+@Database(entities = User.class, version = 4, exportSchema = false)
 public abstract class Project2Database extends RoomDatabase {
     public static final String USER_TABLE = "userTable";
+    public static final String TIERLIST_TABLE = "tierListTable";
     private static final String DATABASE_NAME = "Project2Database";
     private static volatile Project2Database INSTANCE;
     private static final int NUMBER_OF_THREADS = 4;

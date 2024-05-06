@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.p2338.Database.Entities.UserDAO;
-
 public class LandingActivity extends AppCompatActivity {
 
     public final String TAG = "LANDING";
@@ -24,10 +22,13 @@ public class LandingActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
-        setContentView(R.layout.landing_activity);
+        setContentView(R.layout.activity_landing);
         TextView nameField = findViewById(R.id.nameTextView);
+
         Button adminButton = findViewById(R.id.adminButton);
         Button logoutButton = findViewById(R.id.logOutButton);
+        Button makeListButton = findViewById(R.id.buttonLandingToTopicSel);
+
         String nameString = "";
         if (extras != null) {
             Log.i(TAG,"Non-null extras");
@@ -51,10 +52,23 @@ public class LandingActivity extends AppCompatActivity {
                 startActivity(mainIntent);
             }
         });
-        //UserDAO.getAllRecords();
+
+        makeListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listMakerIntentFactory(LandingActivity.this);
+                startActivity(mainIntent);
+            }
+        });
+
     }
 
     private void logOutIntentFactory(Context context){
         mainIntent = new Intent(context, MainActivity.class);
+    }
+
+    private void listMakerIntentFactory (Context context){
+        mainIntent = new Intent(context, TopicSelectionActivity.class);
+        mainIntent.putExtra("Admin", isAdmin);
     }
 }

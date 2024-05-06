@@ -53,4 +53,16 @@
     <string name="notifications">Notifications</string>
     <string name="clear_all">Clear All</string>
     <string name="all_suggestions">All Suggestions</string>
+    <string name="s_tier_tiers">S-TIER TIERS</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="please_log_in">Please log in.</string>
+    <string name="back">Back</string>
+    <string name="topic_1">Topic 1</string>
+    <string name="topic_2">Topic 2</string>
+    <string name="topic_3">Topic 3</string>
+    <string name="select_topic">SELECT TOPIC</string>
+    <string name="please_log_in_sign_in">Please log in.</string>
 </resources>
