@@ -34,6 +34,7 @@ public class UserTest {
         user2.setPassword("acoolpassword123");
         user2.setAdmin(false);
         // Are they equal though
+        // Point being Admin and a normal user should fail
         assertEquals(user1.getUsername(), user2.getUsername());
         assertEquals(user1.getPassword(), user2.getPassword());
         assertEquals(user1.getAdmin(), user2.getAdmin());
