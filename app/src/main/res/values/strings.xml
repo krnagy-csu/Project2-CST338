@@ -20,4 +20,7 @@
     <string name="notifications">Notifications</string>
     <string name="clear_all">Clear All</string>
     <string name="all_suggestions">All Suggestions</string>
+    <string name="background_one">background one</string>
+    <string name="background_two">Background Two</string>
+    <string name="background_three">background three</string>
 </resources>
